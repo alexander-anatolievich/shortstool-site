@@ -1,1 +1,79 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ShortsTool</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;color:#222}a{color:#0a58ca}</style></head><body><h1>ShortsTool</h1><p>ShortsTool is a personal desktop tool. Its only user is the owner of the accounts it posts to (YouTube channel Litvinchik, TikTok @litvinchik_, Instagram @litvinchikl_). It uploads the owner&#x27;s own short gaming videos to the owner&#x27;s own accounts and schedules their publishing through the official APIs: YouTube Data API, TikTok Content Posting API and Instagram API with Instagram Login.</p><p><a href="index.html">ShortsTool</a> · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ShortsTool — turn gameplay recordings into vertical shorts</title>
+<meta name="description" content="ShortsTool is a desktop app that turns a gaming creator's own recordings into vertical shorts and sends them to YouTube, TikTok and Instagram.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta property="og:title" content="ShortsTool">
+<meta property="og:description" content="Turn your gameplay recordings into vertical shorts.">
+<meta property="og:image" content="assets/icon-512.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/icon-180.png" alt="ShortsTool icon">ShortsTool</a>
+  <nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#tiktok">TikTok</a><a href="#faq">FAQ</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <img src="assets/icon-512.png" alt="ShortsTool icon">
+  <div>
+    <h1>Your gameplay,<br>cut into shorts.</h1>
+    <p>ShortsTool is a desktop app for a gaming creator. It takes the creator's own game recordings, finds the best moments, cuts them into vertical 9:16 shorts and sends them to the creator's own YouTube, TikTok and Instagram accounts.</p>
+    <a class="btn" href="#how">How it works</a><a class="btn ghost" href="privacy.html">Privacy policy</a>
+  </div>
+</div></div>
+
+<section id="features"><div class="wrap">
+  <h2>Features</h2>
+  <p class="lead">Everything runs on the creator's own Windows PC. The creator records, ShortsTool does the editing work.</p>
+  <div class="grid">
+    <div class="card"><div class="ico">🎬</div><h3>Episodes from recordings</h3><p>Joins OBS recordings and the face camera into one finished 1440p episode with clean sound.</p></div>
+    <div class="card"><div class="ico">✂️</div><h3>Shorts from the best moments</h3><p>Finds funny and scary moments in the speech and sound and cuts each into a vertical 9:16 short.</p></div>
+    <div class="card"><div class="ico">🔇</div><h3>Clean language</h3><p>Speech is transcribed; swear words are muted on the voice track before anything is posted.</p></div>
+    <div class="card"><div class="ico">✅</div><h3>Creator approves every short</h3><p>Each short is shown to the creator first. Only shorts the creator accepted go out.</p></div>
+    <div class="card"><div class="ico">📅</div><h3>Schedule</h3><p>Accepted shorts are spread over the day so the channels get a steady flow of videos.</p></div>
+    <div class="card"><div class="ico">📊</div><h3>Own statistics</h3><p>Reads views and watch time of the creator's own videos to learn which shorts work better.</p></div>
+  </div>
+</div></section>
+
+<section id="how" class="alt"><div class="wrap">
+  <h2>How it works</h2>
+  <p class="lead">From a finished recording to a short on every platform.</p>
+  <ol class="steps">
+    <li><b>Record</b>The creator plays and records with OBS, as usual.</li>
+    <li><b>Edit</b>ShortsTool builds the episode and the shorts on the PC: transcription, best moments, vertical crop, face camera, muted swearing.</li>
+    <li><b>Review</b>The creator watches every short and accepts or rejects it.</li>
+    <li><b>Send</b>Accepted shorts go to the creator's own accounts through the official APIs: YouTube Data API, TikTok Content Posting API, Instagram API.</li>
+  </ol>
+</div></section>
+
+<section id="tiktok"><div class="wrap">
+  <h2>TikTok integration</h2>
+  <p class="lead">ShortsTool connects to TikTok with Login Kit for Desktop and uses the Content Posting API in "Upload to inbox" mode. Nothing is posted automatically.</p>
+  <ol class="steps">
+    <li><b>Connect</b>The creator signs in with TikTok and allows access (user.info.basic, video.upload). ShortsTool shows which TikTok account is connected.</li>
+    <li><b>Upload as a draft</b>A short the creator accepted is sent to the creator's TikTok inbox as a draft.</li>
+    <li><b>Creator posts in TikTok</b>The creator opens the inbox notification in the TikTok app, edits the caption, chooses who can see it and posts it — or deletes the draft.</li>
+  </ol>
+  <p>Only the creator's own original gameplay is uploaded. Access can be revoked any time in TikTok → Settings and privacy → Security → Apps and services.</p>
+</div></section>
+
+<section id="faq" class="alt"><div class="wrap faq">
+  <h2>FAQ</h2>
+  <details><summary>Who can use ShortsTool?</summary><p>ShortsTool is a personal tool of the gaming creator Litvinchik. It posts only to the creator's own accounts: YouTube channel Litvinchik, TikTok <a href="https://www.tiktok.com/@litvinchik_">@litvinchik_</a> and Instagram <a href="https://www.instagram.com/litvinchikl_/">@litvinchikl_</a>. There is no sign-up and no accounts of other users.</p></details>
+  <details><summary>Where is my data stored?</summary><p>Only on the creator's own computer. Videos and access tokens are not sent anywhere except to the platform the video is posted to. Details are in the <a href="privacy.html">privacy policy</a>.</p></details>
+  <details><summary>Does it post to TikTok by itself?</summary><p>No. It only puts a draft into the TikTok inbox. The creator finishes and posts it in the TikTok app.</p></details>
+  <details><summary>What does it cost?</summary><p>Nothing. ShortsTool is not sold and has no ads.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+  <div>© 2026 ShortsTool</div>
+  <div><a href="index.html">Home</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></div>
+</div></footer>
+</body>
+</html>
